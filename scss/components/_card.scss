@@ -1,0 +1,56 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as m;
+
+.card {
+	background-color: #fff;
+	width: 20.3125rem;
+	border-radius: 1.25rem;
+	box-shadow: rgba(0, 0, 0, 0.1) 0rem 0.25rem 0.75rem;
+
+	@include m.media("desktop") {
+		width: 28.125rem;
+	}
+
+	&__head {
+		width: 100%;
+		border-top-left-radius: inherit;
+		border-top-right-radius: inherit;
+		height: 10rem;
+		background: url("../images/illustration-hero.svg") center center/contain
+			no-repeat;
+
+		@include m.media("desktop") {
+			height: 13.75rem;
+		}
+	}
+
+	&__body {
+		padding-right: 2.2rem;
+		padding-left: 2.2rem;
+		padding-top: 1.875rem;
+		text-align: center;
+
+		@include m.media("desktop") {
+			padding-right: 4.6875rem;
+			padding-left: 4.6875rem;
+			padding-top: 2.5rem;
+		}
+	}
+
+	&__title {
+		font-weight: 900;
+		color: var.$dark-blue;
+		font-size: 1.25rem;
+
+		@include m.media("desktop") {
+			font-size: 1.5rem;
+		}
+	}
+
+	&__desc {
+		line-height: 1.7;
+		padding-top: 0.9375rem;
+		font-size: 0.9375rem;
+		color: var.$desaturated-blue;
+	}
+}

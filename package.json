@@ -1,0 +1,21 @@
+{
+	"name": "order-summary-component",
+	"version": "1.0.0",
+	"description": "Order summary component challenge by Frontend Mentor",
+	"main": "index.js",
+	"scripts": {
+		"sass": "sass --watch scss:css"
+	},
+	"keywords": [
+		"scss",
+		"frontend",
+		"frontend mentor",
+		"css",
+		"html"
+	],
+	"author": "Matteo Minerva",
+	"license": "ISC",
+	"devDependencies": {
+		"sass": "^1.42.1"
+	}
+}

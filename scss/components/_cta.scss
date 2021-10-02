@@ -1,0 +1,37 @@
+@use "../abstracts/variables" as var;
+
+.cta {
+	&--proceed {
+		margin-top: 1.5625rem;
+		width: 100%;
+		padding-top: 0.9375rem;
+		padding-bottom: 0.9375rem;
+		border-radius: 0.625rem;
+		background-color: var.$bright-blue;
+		text-align: center;
+		font-size: 0.875rem;
+		font-weight: 700;
+		color: var.$very-pale-blue;
+		box-shadow: rgba(0, 0, 0, 0.13) 0px 14px 28px,
+			rgba(0, 0, 0, 0.13) 0px 10px 10px;
+		transition: all 0.2s ease-in-out;
+
+		&:hover {
+			cursor: pointer;
+			filter: brightness(200%);
+		}
+	}
+
+	&--cancel {
+		margin-top: 1.25rem;
+		font-weight: 700;
+		color: var.$desaturated-blue;
+		margin-bottom: 2.1875rem;
+		transition: all 0.2s ease-in-out;
+
+		&:hover {
+			cursor: pointer;
+			filter: brightness(20%);
+		}
+	}
+}

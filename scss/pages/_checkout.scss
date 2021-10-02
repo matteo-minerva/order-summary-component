@@ -1,0 +1,10 @@
+main.checkout {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background: url("../images/pattern-background-mobile.svg") top / cover
+			no-repeat,
+		hsl(223, 71%, 93%);
+}

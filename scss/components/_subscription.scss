@@ -1,0 +1,53 @@
+@use "../abstracts/variables" as var;
+
+.subscription-plan {
+	padding-top: 0.9375rem;
+	padding-bottom: 0.9375rem;
+	display: flex;
+	margin-top: 0.9375rem;
+	background: var.$very-pale-blue;
+	border-radius: 0.625rem;
+
+	&__icon {
+		width: 30%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__choice {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		text-align: left;
+		width: 40%;
+
+		&__text--main {
+			font-size: 0.875rem;
+			font-weight: 900;
+		}
+
+		&__text--sub {
+			line-height: 2;
+			font-size: 0.875rem;
+			color: var(--desaturated-blue);
+		}
+	}
+
+	&__cta {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 30%;
+		font-size: 0.875rem;
+		color: var.$bright-blue;
+		font-weight: 700;
+		text-decoration: underline;
+		transition: all 0.2s ease-in-out;
+
+		&:hover {
+			cursor: pointer;
+			filter: brightness(200%);
+		}
+	}
+}
