@@ -4,8 +4,8 @@
 	"description": "Order summary component challenge by Frontend Mentor",
 	"main": "index.js",
 	"scripts": {
-		"sass": "sass --watch scss:css",
-		"build": "sass scss:css"
+		"dev": "sass --watch scss:css",
+		"sass": "sass scss:css"
 	},
 	"keywords": [
 		"scss",
